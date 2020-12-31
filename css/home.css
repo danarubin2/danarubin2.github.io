@@ -1,0 +1,34 @@
+#intro-header{
+    margin: 2%;
+    font-size: 5vw;
+}
+
+#intro-card-text{
+    margin: 2%;
+    font-size: 2vw;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    padding-top: 5%;
+}
+
+#intro-card{
+    width: 100vw !important;
+    color: white;
+    border-radius: 10px;
+}
+
+#intro-paragraph{
+    width: 100vw !important;
+    color: black;
+    border-radius: 10px;
+}
+
+#intro-paragraph-text{
+    margin: 5%;
+    font-size: 1.15vw;
+}
+
+footer{
+    margin-top: 2vw;
+}
