@@ -1,0 +1,78 @@
+.navbar{
+    height: 7vw;
+}
+
+.navbar-brand{
+    margin-left: 2vw;
+    font-size: 2.5vw !important;
+}
+
+.navbar-items{
+    margin-left: 15vw;
+}
+
+.navbar-nav{
+    width: 65vw;
+}
+
+.nav-item{
+    margin-left: 6vw;
+    font-size: 1.5vw !important;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-site-blue{
+    background-color: #1393ce;
+}
+
+.site-blue{
+    color:#1393ce !important;
+}
+
+footer{
+    height: 20vh;
+}
+
+.no-stack{
+    margin-top: 75%;
+    margin-left: 30%;
+    color:black;
+}
+
+.icon-container{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon-caption{
+    display: block;
+    margin: 2%;
+}
+
+#email-container{
+    margin-top: 15%;
+}
+
+#email-icon{
+    margin-top: 10%;
+    margin-right: 2%;
+    color: black;
+    display: inline-block;
+}
+
+#email-span{
+    display: inline-block;
+    font-size: 1.25vw;
+}
+
+#phone-icon{
+    margin-right: 1%;
+    display: inline-block;
+}
+
+#phone-span{
+    display: inline-block;
+    font-size: 1.25vw;
+}
