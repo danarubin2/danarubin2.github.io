@@ -5,17 +5,17 @@
     margin-left: 2%;
 }
 
-#academic-experiences{
+#professional-experiences{
     margin-top: 9vw;
     margin-left: 2vw;
     margin-right: 2vw;
 }
 
-#academic-header{
+#professional-header{
     font-size: 2.5vw !important;
 }
 
-#accomplishments-header{
+#academic-header{
     font-size: 2.5vw !important;
     margin-top: 2vw;
 }
@@ -29,8 +29,8 @@
 }
 
 .card-text{
-    font-size: 1.20vw !important;
-    margin: 1vw;
+    margin-top: 3vw !important;
+    margin-right: 1.5vw !important;
 }
 
 .role-title{
@@ -57,48 +57,57 @@
 #unc-photo{
     height: 15vw;
     margin: 3vw;
+    margin-top: 6vw;
     border-radius: 10px;
 }
 
 #webdev-photo{
     height: 15vw;
     margin: 3vw;
+    margin-top: 5vw;
     border-radius: 10px;
 }
 
 #css-photo{
     height: 15vw;
     margin: 3vw;
+    margin-top: 5vw;
     border-radius: 10px;
 }
 
 #camp-mindy-photo{
     height: 15vw;
-    width: 70vw;
     margin: 3vw;
+    margin-top: 6vw;
     border-radius: 10px;
 }
 
 #courses-photo{
     height: 15vw;
     width: 26vw;
-    margin: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 12vw;
     border-radius: 10px;
 }
 
 #unc-text{
     margin-top: 2vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
 }
 
 #webdev-text{
     margin-top: 2vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
 }
 
 #camp-mindy-text{
     margin-top: 2vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
+}
+
+#css-text{
+    margin-bottom: 2vw;
 }
 
 #courses-text{

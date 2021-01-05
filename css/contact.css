@@ -2,7 +2,7 @@
     margin-top: 9vw;
 }
 
-#contact-photo-1{
+#contact-photo{
     height: 25vw;
     border-radius: 10px;
     margin-right: 3vw;
@@ -11,15 +11,15 @@
 .contact-card{
     border-radius: 10px;
     height: 25vw;
+    margin-left: 3vw;
 }
 
 .contact-title{
     font-weight: bold !important;
     font-size: 1.5vw !important;
     margin-left: 2vw;
-    margin-top: 5vw;
     margin-bottom: 1vw;
-    
+    padding-top: 5vw;    
 }
 
 .contact-text{
