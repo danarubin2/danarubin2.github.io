@@ -12,12 +12,102 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <!--Link JS-->
+        <script src = "../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src = "../scripts/sitewide.js"></script>
+    
+        <style>
+          @media only screen and (max-width: 575px) {
+            #contact-photo{
+              margin-left: -2vw !important;
+            }
+            .contact-card{
+                height: 75vw !important;
+                width: 84.5vw !important;
+                margin-left: -2.5vw !important; 
+            }
+          }
+          @media only screen and (max-width: 768px) {
+              nav{
+                  margin-bottom: 5vw;
+              }
+              .navbar-items{
+                  margin-left: 0;
+              }
+              .navbar-nav{
+                  width: 40vw;
+                  margin-top: 1vw;
+                  margin-left: 55vw;
+                  border-radius: 10px;
+                  text-align: center;
+                  background-color: rgb(248, 248, 248);
+                  border: thin solid gray;
+              }
+              .nav-item{
+                  font-size: 3.5vw !important;
+                  font-weight: 300 !important;
+                  width: 70%;
+              }
+              nav{
+                  height: 15vw !important;
+              }
+              .navbar-brand{
+                  font-size: 5vw !important;
+              }
+              .row{
+                margin-left: 0.5vw !important;
+                margin-right: 0.5vw !important;
+              }
+              #main-section{
+                margin-top: 20vw;
+              }
+              #contact-photo{
+                height: 60vw;
+                margin-left: 2vw;
+              }
+              .contact-card{
+                height: 85vw !important;
+                width: 84vw;
+                margin-left: 2vw;
+                margin-top: 3vw;
+              }
+              .contact-title{
+                font-size: 4.5vw !important;
+                padding: 3vw;
+                padding-top: 7vw;
+              }
+              .contact-text{
+                font-size: 3.5vw !important;
+                padding: 3vw;
+              }
+              .contact-item{
+                font-size: 3.5vw !important;
+              }
+              .no-stack{
+                  margin-top: 10vw;
+                  font-size: 3vw;
+              }
+              i{
+                  font-size: 5vw !important;
+              }
+
+              .icon-caption{
+                  font-size: 3.5vw;
+              }
+              footer{
+                  height: 25vw;
+              }
+          }
+        </style>
+
     </head>
 
     <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light ">
             <a class="navbar-brand" href="#">Dana Rubin</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="collapse-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse mr-auto" id="navbarNav">
@@ -42,22 +132,30 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
               <div class="d-flex align-items-center text-align-center" id="photo-card">
-                <img src="../images/about_photo_1.jpg" alt="contact photo 1" id="contact-photo-1">
-                <div class="bg-light contact-card">
-                    <h4 class="lead contact-title">Thanks for stopping by!</h4>
-                    <p class="lead contact-text">
-                        I hope you enjoyed looking through my website and getting to know me. I'd love to get to know
-                        you more, so if you are interested you can contact me at:
-                    </p>
-                    <ul class="lead">
-                      <li>Email: dana.r.r25@gmail.com</li>
-                      <li>Phone: 704-517-8953</li>
-                    </ul>
-                    <p class="lead contact-text">
-                      You can also see the footer of this page for links to my LinkedIn, GitHub, and Resume.
-                      I look forward to hearing from you soon!
-                    </p>
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="../images/about_photo_1.jpg" alt="contact photo" id="contact-photo">
                   </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-7">
+                    <div class="bg-light contact-card">
+                      <h4 class="lead contact-title">Thanks for stopping by!</h4>
+                      <p class="lead contact-text">
+                          I hope you enjoyed looking through my website and getting to know me. I'd love to get to know
+                          you more, so if you are interested you can contact me at:
+                      </p>
+                      <ul class="lead">
+                        <li class="contact-item">Email: dana.r.r25@gmail.com</li>
+                        <li class="contact-item">Phone: 704-517-8953</li>
+                      </ul>
+                      <p class="lead contact-text">
+                        You can also see the footer of this page for links to my LinkedIn, GitHub, and Resume.
+                        I look forward to hearing from you soon!
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
                 </div>  
 
             </div>
@@ -70,7 +168,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center" id="linked-in-icon">
+                        <div class="col-4 d-flex align-items-center justify-content-center" id="linked-in-icon">
                             <div class="icon-container" id="linkedin-container">
                                 <a class="li-ic" href="https://www.linkedin.com/in/rubin-dana/">
                                     <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x no-stack"> </i>
@@ -78,7 +176,7 @@
                                 <span class="lead text-center icon-caption">LinkedIn</span>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex align-items-center justify-content-center" id="github-icon">
+                        <div class="col-4 d-flex align-items-center justify-content-center" id="github-icon">
                             <div class="icon-container" id="github-container">
                                 <a class="git-ic" href="https://github.com/danarubin2">
                                     <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x no-stack"></i>
@@ -86,7 +184,7 @@
                                 <span class="lead text-center icon-caption">GitHub</span>
                             </div>    
                         </div>
-                        <div class="col-md-4 d-flex align-items-center justify-content-center" id="resume-icon">
+                        <div class="col-4 d-flex align-items-center justify-content-center" id="resume-icon">
                             <div class="icon-container" id="resume-container">
                                 <a class="res-ic" href="../resume.pdf">
                                     <i class="fas fa-paperclip fa-lg white-text mr-md-5 mr-3 fa-2x no-stack"></i>

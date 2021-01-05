@@ -12,13 +12,170 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+        <!-- Links to JS -->
+        <script src = "../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src = "../scripts/sitewide.js"></script>
+
+        <style>
+            @media only screen and (max-width: 575px){
+                #spectrum-photo{
+                    margin-left: 1.5vw !important;
+                    margin-top: 5vw !important;
+                }
+                #unc-photo{
+                    margin: 0vw !important;
+                }
+                #camp-mindy-photo{
+                    margin: 0vw !important;
+                    margin-left: 3vw !important;
+                }
+                #webdev-photo{
+                    margin-left: 4vw !important; 
+                }
+                #css-photo{
+                    margin-left: 4vw !important;
+                }
+                #courses-photo{
+                    margin-left: 3vw !important;
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                nav{
+                    margin-bottom: 5vw;
+                }
+                .navbar-items{
+                    margin-left: 0;
+                }
+                .navbar-nav{
+                    width: 40vw;
+                    margin-top: 1vw;
+                    margin-left: 55vw;
+                    border-radius: 10px;
+                    text-align: center;
+                    background-color: rgb(248, 248, 248);
+                    border: thin solid gray;
+                }
+                .nav-item{
+                    font-size: 3.5vw !important;
+                    font-weight: 300 !important;
+                    width: 70%;
+                }
+                nav{
+                    height: 15vw !important;
+                }
+                .navbar-brand{
+                    font-size: 5vw !important;
+                }
+                .row{
+                    margin-left: 1vw;
+                    margin-right: 1vw;
+                }
+                
+                #professional-experiences{
+                    margin-top: 20vw;
+                }
+                #professional-header, #academic-header{
+                    font-size: 5vw !important;
+                    font-weight: 200;
+                }     
+                #academic-header{
+                    margin-top: 5vw;
+                    margin-bottom: 5vw;
+                }        
+                .exp-card{
+                    height: 150vw;
+                }
+                #unc-card{
+                    height: 175vw;
+                }
+                #camp-mindy-card{
+                    height: 175vw;
+                }
+                #webdev-card{
+                    height: 175vw;
+                }
+                #css-card{
+                    height: 175vw;
+                }
+                #courses-card{
+                    height: 225vw;
+                }
+                .card-text{
+                    margin: 2vw;
+                    margin-top: 5vw !important;
+                }
+                .role-title{
+                    font-size: 4.5vw !important;
+                    font-weight: 300 !important;
+                }
+                .role-subtitle{
+                    font-size: 4vw !important;
+                    font-weight: 150 !important;
+                }
+                .role-text{
+                    font-size: 3.5vw !important;
+                }
+                #spectrum-photo{
+                    height: 40vw;
+                    margin: 0vw;
+                    margin-left: 3vw;
+                }
+                #unc-photo{
+                    height: 37vw;
+                    margin-left: 5vw !important;
+                }
+                #camp-mindy-photo{
+                    height: 38vw;
+                    margin-left: 6vw;
+                }
+                #webdev-photo{
+                    height: 38vw;
+                    margin-left: 5vw;
+                }
+                #css-photo{
+                    height: 38vw;
+                    margin-left: 5vw;
+                }
+                #courses-photo{
+                    height: 38vw !important;
+                    width: auto !important;
+                    margin-left: 5vw;
+                    margin-top: 7vw !important;
+                }
+                #list-1, #list-2{
+                    margin: 0vw;
+                    margin-left: -5vw;
+                    margin-top: -1vw;
+                }
+                #current-courses{
+                    font-size: 3.5vw !important;
+                }
+                .no-stack{
+                    margin-top: 10vw;
+                    font-size: 3vw;
+                }
+                i{
+                    font-size: 5vw !important;
+                }
+
+                .icon-caption{
+                    font-size: 3.5vw;
+                }
+                footer{
+                    height: 25vw;
+                }
+            }
+        </style>
+    
     </head>
 
     <body>
         <div>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light ">
             <a class="navbar-brand" href="#">Dana Rubin</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="collapse-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse mr-auto" id="navbarNav">
@@ -45,129 +202,174 @@
             </p>
         </div>-->
 
-        <div id="academic-experiences">
+        <div id="professional-experiences">
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div class="row">
-                        <h4 class="display-4" id="academic-header">Professional Experiences</h4>
+                        <h4 class="display-4" id="professional-header">Professional Experiences</h4>
                         <div class="bg-light d-flex align-items-center text-align-center exp-card" id="spectrum-card">
-                            <img src="../images/spectrum.jpg" alt="spectrum photo" id="spectrum-photo">
-                            <div>
-                                <h4 class="lead role-title">Automation Developer Intern: Spectrum</h4>
-                                <h5 class="lead role-subtitle">Summer 2020</h5>
-                                <p class="lead role-text">
-                                    In a partially remote and partially in-person internship, I spent six weeks working with Spectrum's 
-                                    Automation Development team in Charlotte, North Carolina. I first received training in the central
-                                    automation framework used by the team before embarking on my own journey of creating test cases for
-                                    projects based in web services, web applications, database applications, and desktop applications. I
-                                    primarily used tools such as SoapUI, Selenium, and Winium to develop test cases and Jenkins to run
-                                    them.
-                                </p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../images/spectrum.jpg" alt="spectrum photo" id="spectrum-photo">
+                                </div>
+                                <div class ="col-md-1"></div>
+                                <div class="col-md-7">
+                                    <div class="card-text">
+                                        <h4 class="lead role-title">Automation Developer Intern: Spectrum</h4>
+                                        <h5 class="lead role-subtitle">Summer 2020</h5>
+                                        <p class="lead role-text">
+                                            In a partially remote and partially in-person internship, I spent six weeks working with Spectrum's 
+                                            Automation Development team in Charlotte, North Carolina. I first received training in the central
+                                            automation framework used by the team before embarking on my own journey of creating test cases for
+                                            projects based in web services, web applications, database applications, and desktop applications. I
+                                            primarily used tools such as SoapUI, Selenium, and Winium to develop test cases and Jenkins to run
+                                            them.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
+                            
                         </div>
                         
                         <div class="bg-light d-flex align-items-center text-align-center exp-card" id="unc-card">
-                            <img src="../images/unc_photo.jpeg" alt="unc photo" id="unc-photo">
-                            <div id="unc-text">
-                                <h4 class="lead role-title">COMP 210 Learning Assistant: UNC Chapel Hill</h4>
-                                <h5 class="lead role-subtitle">August 2019 - Present</h5>
-                                <p class="lead role-text">
-                                    As a learning assistant in COMP 210: Data Structures, I help teach programming concepts to other 
-                                    students while fortifying my own knowledge in the process. I hold office hours sessions to help students with 
-                                    programming assignments and also hold weekly review sessions to help smaller groups
-                                    of students understand lecture content. In this role, I regularly program and debug in Java, create and debug 
-                                    JUnit tests, and work with IDE's such as IntelliJ and Eclipse. In previous semesters, I helped with 
-                                    COMP 401: Foundations of Programming, a class focused on teaching object-oriented programming and design patterns. 
-                                    In total, I have served three semesters as a learning assistant and plan on continuing! 
-                                </p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../images/unc_photo.jpeg" alt="unc photo" id="unc-photo">
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-7">
+                                    <div class="card-text" id="unc-text">
+                                        <h4 class="lead role-title">COMP 210 Learning Assistant: UNC Chapel Hill</h4>
+                                        <h5 class="lead role-subtitle">August 2019 - Present</h5>
+                                        <p class="lead role-text">
+                                            As a learning assistant in COMP 210: Data Structures, I help teach programming concepts to other 
+                                            students while fortifying my own knowledge in the process. I hold office hours sessions to help students with 
+                                            programming assignments and also hold weekly review sessions to help smaller groups
+                                            of students understand lecture content. In this role, I regularly program and debug in Java, create and debug 
+                                            JUnit tests, and work with IDE's such as IntelliJ and Eclipse. In previous semesters, I helped with 
+                                            COMP 401: Foundations of Programming, a class focused on teaching object-oriented programming and design patterns. 
+                                            In total, I have served three semesters as a learning assistant and plan on continuing! 
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
 
                         <div class="bg-light d-flex align-items-center text-align-center exp-card" id="camp-mindy-card">
-                            <img src="../images/camp_mindy.PNG" alt="camp mindy photo" id="camp-mindy-photo">
-                            <div id="camp-mindy-text">
-                                <h4 class="lead role-title">Summer Camp Counselor: Camp Mindy</h4>
-                                <h5 class="lead role-subtitle">Summer 2016 - 2019</h5>
-                                <p class="lead role-text">
-                                    In my first summer experiences, I served as a first grade counselor at Camp Mindy. Each year, I worked with two other 
-                                    co-counselors and was responsible for making sure that campers stayed safe and had fun. This required me to ensure that
-                                    campers arrived at activities on time and were following directions. I was also responsible for resolving any conflicts
-                                    between campers (and, working with first graders, that can be a hefty responsibility at times!). This job strengthened my
-                                    communication skills with people of all ages, as it required me to work together with co-counselors, children, and parents
-                                    alike. Although I have moved on from my summer camp days, I look back fondly at my time as a counselor!
-                                </p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../images/camp_mindy.PNG" alt="camp mindy photo" id="camp-mindy-photo">
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-7">
+                                    <div class="card-text" id="camp-mindy-text">
+                                        <h4 class="lead role-title">Summer Camp Counselor: Camp Mindy</h4>
+                                        <h5 class="lead role-subtitle">Summer 2016 - 2019</h5>
+                                        <p class="lead role-text">
+                                            In my first summer experiences, I served as a first grade counselor at Camp Mindy. Each year, I worked with two other 
+                                            co-counselors and was responsible for making sure that campers stayed safe and had fun. This required me to ensure that
+                                            campers arrived at activities on time and were following directions. I was also responsible for resolving any conflicts
+                                            between campers (and, working with first graders, that can be a hefty responsibility at times!). This job strengthened my
+                                            communication skills with people of all ages, as it required me to work together with co-counselors, children, and parents
+                                            alike. Although I have moved on from my summer camp days, I look back fondly at my time as a counselor!
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <h4 class="display-4" id="accomplishments-header">Academic Experiences</h4>
+                        <h4 class="display-4" id="academic-header">Academic Experiences</h4>
 
                         <div class="bg-light d-flex align-items-center text-align-center exp-card" id="webdev-card">
-                            <img src="../images/web_dev_photo.PNG" alt="webdev photo" id="webdev-photo">
-                            <div id="webdev-text">
-                                <h4 class="lead role-title">Education Chair: WebDev Carolina</h4>
-                                <h5 class="lead role-subtitle">August 2020 - Present</h5>
-                                <p class="lead role-text">
-                                    As the education chair of UNC's first Web Development club, I seek to teach basic web development skills to students
-                                    coming into the club with varying degrees of experience. With the help of the other officers on my team, I have led the creation
-                                    of an eight week curriculum focused on teaching students how to use HTML, CSS, and Bootstrap to create websites and providing them
-                                    with opportunities to practice these skills. The end goal of this education curriculum is that by the end of the eight weeks, all
-                                    participating students regradless of their initial knowledge of web development will be prepared to work on projects for local
-                                    businesses and organizations. 
-                                </p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../images/web_dev_photo.PNG" alt="webdev photo" id="webdev-photo">
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-7">
+                                    <div class="card-text" id="webdev-text">
+                                        <h4 class="lead role-title">Education Chair: WebDev Carolina</h4>
+                                        <h5 class="lead role-subtitle">August 2020 - Present</h5>
+                                        <p class="lead role-text">
+                                            As the education chair of UNC's first Web Development club, I seek to teach basic web development skills to students
+                                            coming into the club with varying degrees of experience. With the help of the other officers on my team, I have led the creation
+                                            of an eight week curriculum focused on teaching students how to use HTML, CSS, and Bootstrap to create websites and providing them
+                                            with opportunities to practice these skills. The end goal of this education curriculum is that by the end of the eight weeks, all
+                                            participating students regradless of their initial knowledge of web development will be prepared to work on projects for local
+                                            businesses and organizations. 
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="bg-light d-flex align-items-center text-align-center exp-card" id="css-card">
-                            <img src="../images/css_photo.PNG" alt="css photo" id="css-photo">
-                            <div id="css-text">
-                                <h4 class="lead role-title">Distinguished Scholar: UNC Chancellor's Science Scholars</h4>
-                                <h5 class="lead role-subtitle">August 2018 - Present</h5>
-                                <p class="lead role-text">
-                                    I am a member of the Chancellor's Science Scholars, a scholarship given to a diverse group of forty
-                                    students with a particular interest in scientific research and achieving a higher education in a STEM field.
-                                    This scholarship has allowed me to strengthen my professional and communication skills while also connecting me
-                                    with a strong network of students, professors, and alumni across UNC. I assist with the recruitment committee of
-                                    CSS in order to plan our selection events and build interest in the program. As of August 2020, I am a distinguished
-                                    scholar, an award given to a small group of students within the junior and senior year cohorts.
-                                </p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../images/css_photo.PNG" alt="css photo" id="css-photo">
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-7">
+                                    <div class="card-text" id="css-text">
+                                        <h4 class="lead role-title">Distinguished Scholar: UNC Chancellor's Science Scholars</h4>
+                                        <h5 class="lead role-subtitle">August 2018 - Present</h5>
+                                        <p class="lead role-text">
+                                            I am a member of the Chancellor's Science Scholars, a scholarship given to a diverse group of forty
+                                            students with a particular interest in scientific research and achieving a higher education in a STEM field.
+                                            This scholarship has allowed me to strengthen my professional and communication skills while also connecting me
+                                            with a strong network of students, professors, and alumni across UNC. I assist with the recruitment committee of
+                                            CSS in order to plan our selection events and build interest in the program. As of August 2020, I am a distinguished
+                                            scholar, an award given to a small group of students within the junior and senior year cohorts.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="bg-light d-flex align-items-center text-align-center exp-card" id="courses-card">
-                            <img src="../images/courses_photo.PNG" alt="courses photo" id="courses-photo">
-                            <div id="courses-text">
-                                <h4 class="lead role-title">Computer Science and Math Courses</h4>
-                                <h5 class="lead role-subtitle">2018 - Present , 3.943 Overall GPA , 4.0 Major GPA </h5>
-                                <p class="lead role-text">
-                                    So far at UNC, I have taken:
-                                    <div class="row" id="course-list">
-                                        <div class="col-md-6 lead">
-                                            <ul>
-                                                <li>COMP 401: Foundations of Programming</li>
-                                                <li>COMP 410: Data Structures</li>
-                                                <li>COMP 411: Computer Organization</li>
-                                                <li>COMP 426: Modern Web Programming</li>
-                                                <li>COMP 455: Models of Language and Computation</li>
-                                                <li>COMP 475: 2D Computer Graphics</li>
-                                                <li>COMP 524: Programming Language Concepts</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6 lead">
-                                            <ul>
-                                                <li>COMP 550: Algorithms and Analysis</li>
-                                                <li>COMP 562: Machine Learning</li>
-                                                <li>MATH 381: Discrete Math</li>
-                                                <li>MATH 547: Linear Algebra</li>
-                                                <li>MATH 548: Combinatorics</li>
-                                                <li>STOR 435: Introduction to Probability</li>
-                                            </ul>
-                                        </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../images/courses_photo.PNG" alt="courses photo" id="courses-photo">
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-7">
+                                    <div class="card-text" id="courses-text">
+                                        <h4 class="lead role-title">Computer Science and Math Courses</h4>
+                                        <h5 class="lead role-subtitle">2018 - Present , 3.943 Overall GPA , 4.0 Major GPA </h5>
+                                        <p class="lead role-text">
+                                            So far at UNC, I have taken:
+                                            <div class="row" id="course-list">
+                                                <div class="col-md-6 lead">
+                                                    <ul id="list-1">
+                                                        <li class="role-text">COMP 401: Foundations of Programming</li>
+                                                        <li class="role-text">COMP 410: Data Structures</li>
+                                                        <li class="role-text">COMP 411: Computer Organization</li>
+                                                        <li class="role-text">COMP 426: Modern Web Programming</li>
+                                                        <li class="role-text">COMP 455: Models of Language and Computation</li>
+                                                        <li class="role-text">COMP 475: 2D Computer Graphics</li>
+                                                        <li class="role-text">COMP 524: Programming Language Concepts</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6 lead">
+                                                    <ul id="list-2">
+                                                        <li class="role-text">COMP 550: Algorithms and Analysis</li>
+                                                        <li class="role-text">COMP 562: Machine Learning</li>
+                                                        <li class="role-text">MATH 381: Discrete Math</li>
+                                                        <li class="role-text">MATH 547: Linear Algebra</li>
+                                                        <li class="role-text">MATH 548: Combinatorics</li>
+                                                        <li class="role-text">STOR 435: Introduction to Probability</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </p>
+                                        <p class="lead role-text" id="current-courses">
+                                            Next semester, I am scheduled to take COMP 521: Files and Databases and COMP 572: Computational Photography!
+                                        </p>
                                     </div>
-                                    <span class="lead" id="current-courses">
-                                        Next semester, I am scheduled to take COMP 521: Files and Databases and COMP 572: Computational Photography!
-                                    </span>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -185,7 +387,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center" id="linked-in-icon">
+                        <div class="col-4 d-flex align-items-center justify-content-center" id="linked-in-icon">
                             <div class="icon-container" id="linkedin-container">
                                 <a class="li-ic" href="https://www.linkedin.com/in/rubin-dana/">
                                     <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x no-stack"> </i>
@@ -193,7 +395,7 @@
                                 <span class="lead text-center icon-caption">LinkedIn</span>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex align-items-center justify-content-center" id="github-icon">
+                        <div class="col-4 d-flex align-items-center justify-content-center" id="github-icon">
                             <div class="icon-container" id="github-container">
                                 <a class="git-ic" href="https://github.com/danarubin2">
                                     <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x no-stack"></i>
@@ -201,7 +403,7 @@
                                 <span class="lead text-center icon-caption">GitHub</span>
                             </div>    
                         </div>
-                        <div class="col-md-4 d-flex align-items-center justify-content-center" id="resume-icon">
+                        <div class="col-4 d-flex align-items-center justify-content-center" id="resume-icon">
                             <div class="icon-container" id="resume-container">
                                 <a class="res-ic" href="../resume.pdf">
                                     <i class="fas fa-paperclip fa-lg white-text mr-md-5 mr-3 fa-2x no-stack"></i>
