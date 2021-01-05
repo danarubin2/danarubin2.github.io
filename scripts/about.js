@@ -1,7 +1,6 @@
 let curr = 1;
 
 $(function() {
-    console.log('hello');
     $("#left-arrow-holder").on("click", function(event){
         handleLeftArrowPress(event);
         event.stopImmediatePropagation();
