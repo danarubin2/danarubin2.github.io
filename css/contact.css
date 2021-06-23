@@ -35,5 +35,8 @@ ul{
 }
 
 footer{
-    margin-top: 2vw;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

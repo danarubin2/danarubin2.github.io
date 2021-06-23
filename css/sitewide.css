@@ -1,5 +1,10 @@
+body{
+    overflow-x: hidden;
+}
+
 .navbar{
     height: 7vw;
+    width: 100vw;
 }
 
 .navbar-brand{
@@ -36,7 +41,7 @@ footer{
 }
 
 .no-stack{
-    margin-top: 75%;
+    margin-top: 7.5vh;
     margin-left: 30%;
     color:black;
 }
@@ -45,6 +50,7 @@ footer{
     vertical-align: top;
     display: inline-block;
     text-align: center;
+    font-size: 2vh;
 }
 
 .icon-caption{
@@ -54,26 +60,4 @@ footer{
 
 #email-container{
     margin-top: 15%;
-}
-
-#email-icon{
-    margin-top: 10%;
-    margin-right: 2%;
-    color: black;
-    display: inline-block;
-}
-
-#email-span{
-    display: inline-block;
-    font-size: 1.25vw;
-}
-
-#phone-icon{
-    margin-right: 1%;
-    display: inline-block;
-}
-
-#phone-span{
-    display: inline-block;
-    font-size: 1.25vw;
 }

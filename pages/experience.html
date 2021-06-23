@@ -24,6 +24,9 @@
                     margin-left: 1.5vw !important;
                     margin-top: 5vw !important;
                 }
+                #roku-photo{
+
+                }
                 #unc-photo{
                     margin: 0vw !important;
                 }
@@ -87,6 +90,9 @@
                 .exp-card{
                     height: 150vw;
                 }
+                #roku-card{
+                    height: 160vw;
+                }
                 #unc-card{
                     height: 175vw;
                 }
@@ -117,6 +123,11 @@
                 .role-text{
                     font-size: 3.5vw !important;
                 }
+                #roku-photo{
+                    height: 35vw;
+                    margin-top: 5vw;
+                    margin-left: 4vw;
+                }
                 #spectrum-photo{
                     height: 40vw;
                     margin: 0vw;
@@ -142,7 +153,7 @@
                     height: 38vw !important;
                     width: auto !important;
                     margin-left: 5vw;
-                    margin-top: 7vw !important;
+                    margin-top: 2vw !important;
                 }
                 #list-1, #list-2{
                     margin: 0vw;
@@ -208,6 +219,32 @@
                 <div class="col-md-10">
                     <div class="row">
                         <h4 class="display-4" id="professional-header">Professional Experiences</h4>
+
+                        <div class="bg-light d-flex align-items-center text-align-center exp-card" id="roku-card">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../images/roku_photo.png" alt="roku photo" id="roku-photo">
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-7">
+                                    <div class="card-text" id="roku-text">
+                                        <h4 class="lead role-title">QA Engineer Intern: Roku</h4>
+                                        <h5 class="lead role-subtitle">Summer 2021</h5>
+                                        <p class="lead role-text">
+                                            This summer, I am working virtually on Roku's New Products Team, which is based in Austin, Texas! I am responsible
+                                            for checking manual test cases as well as creating automated ones. Beyond creating and verifying test cases, I also look
+                                            at the logs for tests that have failed in order to determine their cause of failure. By the end of the summer I will have 
+                                            completed my summer internship project, which is to create a set of test cases through the Roku Automation Framework
+                                            that have not yet been automated. This job requires knowledge of Python and tools like Docker, Perforce, bug management tools,
+                                            and the command line.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
                         <div class="bg-light d-flex align-items-center text-align-center exp-card" id="spectrum-card">
                             <div class="row">
                                 <div class="col-md-4">
@@ -338,7 +375,7 @@
                                 <div class="col-md-7">
                                     <div class="card-text" id="courses-text">
                                         <h4 class="lead role-title">Computer Science and Math Courses</h4>
-                                        <h5 class="lead role-subtitle">2018 - Present , 3.943 Overall GPA , 4.0 Major GPA </h5>
+                                        <h5 class="lead role-subtitle">2018 - Present , 3.931 GPA </h5>
                                         <p class="lead role-text">
                                             So far at UNC, I have taken:
                                             <div class="row" id="course-list">
@@ -357,6 +394,8 @@
                                                     <ul id="list-2">
                                                         <li class="role-text">COMP 550: Algorithms and Analysis</li>
                                                         <li class="role-text">COMP 562: Machine Learning</li>
+                                                        <li class="role-text">COMP 521: Files and Databases</li>
+                                                        <li class="role-text">COMP 572: Computational Photography</li>
                                                         <li class="role-text">MATH 381: Discrete Math</li>
                                                         <li class="role-text">MATH 547: Linear Algebra</li>
                                                         <li class="role-text">MATH 548: Combinatorics</li>
@@ -364,9 +403,6 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </p>
-                                        <p class="lead role-text" id="current-courses">
-                                            Next semester, I am scheduled to take COMP 521: Files and Databases and COMP 572: Computational Photography!
                                         </p>
                                     </div>
                                 </div>

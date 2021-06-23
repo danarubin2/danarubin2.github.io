@@ -54,6 +54,13 @@
     border-radius: 10px;
 }
 
+#roku-photo{
+    height: 15vw;
+    margin: 3vw;
+    margin-top: 5vw;
+    border-radius: 10px;
+}
+
 #unc-photo{
     height: 15vw;
     margin: 3vw;
@@ -87,8 +94,12 @@
     width: 26vw;
     margin-left: 3vw;
     margin-right: 3vw;
-    margin-top: 12vw;
+    margin-top: 7.5vw;
     border-radius: 10px;
+}
+
+#roku-text{
+    margin-bottom: 3vw;
 }
 
 #unc-text{
@@ -113,6 +124,10 @@
 #courses-text{
     margin-top: 2vw;
     margin-bottom: 1vw;
+}
+
+#courses-card{
+    margin-bottom: 3vw;
 }
 
 #current-courses{
